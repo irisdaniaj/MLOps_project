@@ -1,6 +1,6 @@
 # MLOps_project
 
-This repository contains the group project work for the MLOps course at LMU Munich. 
+This repository contains the group(Iris Jimenez, Nicolò Campagnoli, Meimingwei Li) project work for the MLOps course at LMU Munich. 
 
 
 **1 Overall goal**: The goal is to perform object segmentation on images.\
