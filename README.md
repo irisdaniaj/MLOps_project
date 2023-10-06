@@ -10,9 +10,18 @@ This repository contains the group(Iris Jimenez, Nicolò Campagnoli, Meimingwei 
 **4 Deep Learning model used:**  We used the [Ultralytics YOLOv8 model](https://github.com/ultralytics/ultralytics).
 
 # How to install 
-Clone the repository `git clone https://github.com/irisdaniaj/MLOps_project.git`
-We suggest to install the requirements.txt ```pip install -r requirements.txt``` 
-preferebly in a new conda envirnoment ```conda create --name my_environment --file requirements.txt```
+Clone the repository 
+```
+git clone https://github.com/irisdaniaj/MLOps_project.git
+```
+We suggest to install the requirements.txt 
+```
+pip install -r requirements.txt
+``` 
+preferebly in a new conda envirnoment 
+```
+conda create --name my_environment --file requirements.txt
+```
 
 Project Organization
 ------------
