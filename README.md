@@ -1,4 +1,4 @@
-final_project
+Object detection with YOLOv8
 ==============================
 
 This repository contains the group(Iris Jimenez, Nicolò Campagnoli, Meimingwei Li) project work for the MLOps course at LMU Munich. 
