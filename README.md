@@ -9,6 +9,11 @@ This repository contains the group(Iris Jimenez, Nicolò Campagnoli, Meimingwei 
 **3 Data:** We train our model on the [Pascal VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/index.html#devkit) dataset. It contains 20 foreground object classes and one background class. 1464 (train), 1449 (val), and 1456 (test) pixel-level annotated images.  \
 **4 Deep Learning model used:**  We used the [Ultralytics YOLOv8 model](https://github.com/ultralytics/ultralytics).
 
+# How to install 
+Clone the repository `git clone https://github.com/irisdaniaj/MLOps_project.git`
+We suggest to install the requirements.txt ```pip install -r requirements.txt``` 
+preferebly in a new conda envirnoment ```conda create --name my_environment --file requirements.txt```
+
 Project Organization
 ------------
 
