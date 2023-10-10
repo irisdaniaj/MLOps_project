@@ -23,6 +23,10 @@ Download the dataset by running from the command line
 ```
 python src/data/make_dataset.py 
 ```
+then load the pretrained model 
+```
+python src/models/train_model.py
+```
 Project Organization
 ------------
 
