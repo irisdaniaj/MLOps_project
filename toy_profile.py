@@ -1,12 +1,12 @@
 # Some other way to do it
 from ultralytics import YOLO
+import torch
+from torch.profiler import profile, ProfilerActivity
+from torch.profiler import profile, tensorboard_trace_handler
 
 model_name = "yolov8n" #@param {type:"string"}
 
 model = YOLO(f"{model_name}.pt")
-import torch
-from torch.profiler import profile, ProfilerActivity
-from torch.profiler import profile, tensorboard_trace_handler
 
 # A toy input for testing the model
 inputs = torch.randn(1, 3, 224, 224)
