@@ -18,7 +18,11 @@ We suggest to install the requirements.txt preferebly in a new conda envirnoment
 ```
 pip install -r requirements.txt
 ``` 
-
+# How to run 
+Download the dataset by running from the command line
+```
+python src/data/make_dataset.py /path/where/you/want/download/data
+```
 Project Organization
 ------------
 
