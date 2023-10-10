@@ -14,7 +14,7 @@ Clone the repository
 ```
 git clone https://github.com/irisdaniaj/MLOps_project.git
 ```
-We suggest to install the requirements.txt preferebly in a new conda envirnoment 
+We suggest to install the requirements.txt preferebly in a new conda environment 
 ```
 pip install -r requirements.txt
 ``` 
