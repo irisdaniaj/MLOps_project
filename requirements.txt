@@ -163,6 +163,7 @@ threadpoolctl==3.2.0
 tokenizers==0.14.1
 tomlkit==0.12.1
 torch==2.1.0+cu118
+torch-pruning==1.2.5
 torch-tb-profiler==0.4.3
 torchaudio==2.1.0+cu118
 torchvision==0.16.0+cu118
