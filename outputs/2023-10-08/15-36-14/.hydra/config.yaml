@@ -1,0 +1,15 @@
+train: C:/Users/ra78lof/yolov5/Mydataset/VisDrone2019-DET-train/images
+val: C:/Users/ra78lof/yolov5/Mydataset/VisDrone2019-DET-val/images
+test: C:/Users/ra78lof/yolov5/Mydataset/VisDrone2019-DET-test-dev/images
+nc: 10
+names:
+- pedestrian
+- people
+- bicycle
+- car
+- van
+- truck
+- tricycle
+- awning-tricycle
+- bus
+- motor

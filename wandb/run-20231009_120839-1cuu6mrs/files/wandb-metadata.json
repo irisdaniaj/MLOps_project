@@ -1,0 +1,52 @@
+{
+    "os": "Windows-10-10.0.19043-SP0",
+    "python": "3.11.5",
+    "heartbeatAt": "2023-10-09T11:08:40.474662",
+    "startedAt": "2023-10-09T11:08:39.411649",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/YecanLee/YOLOV8_mlops",
+        "commit": "40c256e67fb9bc5aa8ac868de6d27d9fb3034b91"
+    },
+    "email": "yecanlee@yahoo.com",
+    "root": "C:/Users/LMMISTA-WAP265/YOLOV8_mlops",
+    "host": "LMMISTA-WAP265",
+    "username": "LMMISTA-WAP265",
+    "executable": "C:\\Users\\LMMISTA-WAP265\\anaconda3\\envs\\mlops\\python.exe",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3975.0,
+        "min": 0.0,
+        "max": 3975.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3975.0,
+            "min": 0.0,
+            "max": 3975.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 811.3149948120117,
+            "used": 148.81952285766602
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 63.92646789550781
+    }
+}
