@@ -1,0 +1,1422 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed
+
+
+[34m[1mtrain: [39m[22mScanning C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-train\labels... 6471 images, 0 backgrounds, 0 corrupt: 100%|██████████| 6471/6471 [00:06<00:00, 957.56it/s]
+[34m[1mtrain: [39m[22mWARNING  C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-train\images\0000137_02220_d_0000163.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING  C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-train\images\0000140_00118_d_0000002.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING  C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-train\images\9999945_00000_d_0000114.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING  C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-train\images\9999987_00000_d_0000049.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mNew cache created: C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-train\labels.cache
+[34m[1mval: [39m[22mScanning C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\labels... 548 images, 0 backgrounds, 0 corrupt: 100%|██████████| 548/548 [00:00<00:00, 796.70it/s]
+[34m[1mval: [39m[22mNew cache created: C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\labels.cache
+Plotting labels to ultralytics\train4\labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000714, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1multralytics\train4
+Starting training for 5 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/5      9.46G      1.846      2.389      1.039        715        640: 100%|██████████| 405/405 [00:42<00:00,  9.51it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 18/18 [00:04<00:00,  4.16it/s]
+                   all        548      38759      0.391      0.165      0.132     0.0709
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000001_02999_d_0000005.jpg: 384x640 10 pedestrians, 23 cars, 10 motors, 81.3ms
+Speed: 0.0ms preprocess, 81.3ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02400_d_0000033.jpg: 384x640 99 pedestrians, 74 cars, 1 truck, 4 motors, 3.8ms
+Speed: 2.0ms preprocess, 3.8ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02200_d_0000032.jpg: 384x640 49 pedestrians, 81 cars, 1 truck, 1 bus, 2 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 16.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02000_d_0000031.jpg: 384x640 31 pedestrians, 102 cars, 1 van, 2 trucks, 1 bus, 4 motors, 0.4ms
+Speed: 3.0ms preprocess, 0.4ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01800_d_0000030.jpg: 384x640 33 pedestrians, 112 cars, 1 van, 2 motors, 20.5ms
+Speed: 0.0ms preprocess, 20.5ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01600_d_0000029.jpg: 384x640 35 pedestrians, 68 cars, 1 truck, 2 motors, 0.0ms
+Speed: 16.6ms preprocess, 0.0ms inference, 8.6ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01400_d_0000028.jpg: 384x640 23 pedestrians, 60 cars, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 17.3ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01200_d_0000027.jpg: 384x640 28 pedestrians, 29 cars, 2 vans, 2 trucks, 1 bus, 2 motors, 3.5ms
+Speed: 15.6ms preprocess, 3.5ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01000_d_0000026.jpg: 384x640 17 pedestrians, 38 cars, 1 van, 2 trucks, 1 motor, 5.7ms
+Speed: 17.2ms preprocess, 5.7ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00800_d_0000025.jpg: 384x640 22 pedestrians, 42 cars, 1 van, 2 trucks, 3 buss, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 16.5ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00600_d_0000024.jpg: 384x640 14 pedestrians, 45 cars, 3 vans, 3 trucks, 2 buss, 1 motor, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00200_d_0000022.jpg: 384x640 4 pedestrians, 63 cars, 1 van, 1 truck, 2 motors, 6.8ms
+Speed: 17.3ms preprocess, 6.8ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00000_d_0000021.jpg: 384x640 4 pedestrians, 52 cars, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 16.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000293_03601_d_0000940.jpg: 384x640 2 pedestrians, 69 cars, 7 motors, 19.8ms
+Speed: 0.0ms preprocess, 19.8ms inference, 5.5ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_05201_d_0000893.jpg: 384x640 55 pedestrians, 129 cars, 5 motors, 19.8ms
+Speed: 0.0ms preprocess, 19.8ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02900_d_0000034.jpg: 384x640 72 pedestrians, 56 cars, 1 bus, 3.9ms
+Speed: 15.6ms preprocess, 3.9ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_05001_d_0000892.jpg: 384x640 47 pedestrians, 75 cars, 8 motors, 18.2ms
+Speed: 0.0ms preprocess, 18.2ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_04201_d_0000889.jpg: 384x640 48 pedestrians, 86 cars, 1 van, 2 motors, 0.0ms
+Speed: 16.2ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_04001_d_0000888.jpg: 384x640 48 pedestrians, 57 cars, 1 truck, 1 bus, 7 motors, 15.6ms
+Speed: 0.0ms preprocess, 15.6ms inference, 2.7ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_03801_d_0000887.jpg: 384x640 74 pedestrians, 12 cars, 2 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 16.4ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_03601_d_0000886.jpg: 384x640 47 pedestrians, 19 cars, 11 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 17.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_03401_d_0000885.jpg: 384x640 22 pedestrians, 37 cars, 1 van, 8 motors, 19.5ms
+Speed: 0.0ms preprocess, 19.5ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_03201_d_0000884.jpg: 384x640 53 pedestrians, 122 cars, 1 van, 1 truck, 1 bus, 6 motors, 1.2ms
+Speed: 1.6ms preprocess, 1.2ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_02601_d_0000881.jpg: 384x640 46 pedestrians, 112 cars, 11 motors, 16.2ms
+Speed: 0.0ms preprocess, 16.2ms inference, 3.4ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_02201_d_0000879.jpg: 384x640 42 pedestrians, 95 cars, 3 motors, 2.5ms
+Speed: 2.0ms preprocess, 2.5ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_02001_d_0000878.jpg: 384x640 62 pedestrians, 84 cars, 1 bus, 3 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 11.4ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_01801_d_0000877.jpg: 384x640 36 pedestrians, 100 cars, 9 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 16.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_01601_d_0000876.jpg: 384x640 38 pedestrians, 27 cars, 1 truck, 6 motors, 1.2ms
+Speed: 2.0ms preprocess, 1.2ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_01401_d_0000875.jpg: 384x640 19 pedestrians, 2 peoples, 44 cars, 1 van, 18 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_01201_d_0000874.jpg: 384x640 41 pedestrians, 73 cars, 10 motors, 6.0ms
+Speed: 17.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_01001_d_0000873.jpg: 384x640 23 pedestrians, 63 cars, 1 van, 1 bus, 10 motors, 0.0ms
+Speed: 16.8ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_04401_d_0000890.jpg: 384x640 47 pedestrians, 112 cars, 3 motors, 14.5ms
+Speed: 0.0ms preprocess, 14.5ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        2/5      7.12G      1.674      1.521      0.989        655        640: 100%|██████████| 405/405 [00:38<00:00, 10.58it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 18/18 [00:04<00:00,  4.21it/s]
+                   all        548      38759      0.232      0.216      0.165     0.0916
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_00601_d_0000871.jpg: 384x640 92 pedestrians, 61 cars, 9 vans, 6 trucks, 4 motors, 8.0ms
+Speed: 2.0ms preprocess, 8.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000296_00601_d_0000038.jpg: 384x640 27 pedestrians, 43 cars, 9 vans, 3 trucks, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000300_03201_d_0000154.jpg: 384x640 35 pedestrians, 1 people, 33 cars, 1 van, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_02201_d_0000530.jpg: 384x640 7 pedestrians, 2 cars, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_02001_d_0000529.jpg: 384x640 16 pedestrians, 7 cars, 2 trucks, 1 motor, 8.0ms
+Speed: 1.0ms preprocess, 8.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_01801_d_0000528.jpg: 384x640 14 pedestrians, 5 cars, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_01601_d_0000527.jpg: 384x640 23 pedestrians, 13 cars, 3 trucks, 1 tricycle, 1 motor, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_01401_d_0000526.jpg: 384x640 28 pedestrians, 12 cars, 3 vans, 6 trucks, 1 tricycle, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 4.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_01201_d_0000525.jpg: 384x640 14 pedestrians, 1 people, 23 cars, 1 van, 3 trucks, 8 motors, 6.0ms
+Speed: 1.4ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_01001_d_0000524.jpg: 384x640 2 pedestrians, 1 people, 4 cars, 2 trucks, 2 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_00801_d_0000523.jpg: 384x640 7 pedestrians, 15 cars, 2 trucks, 5 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_00601_d_0000522.jpg: 384x640 7 pedestrians, 10 cars, 1 van, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_00401_d_0000521.jpg: 384x640 1 pedestrian, 25 cars, 2 vans, 1 truck, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_00201_d_0000520.jpg: 384x640 7 pedestrians, 1 people, 15 cars, 1 truck, 3 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000316_00001_d_0000519.jpg: 384x640 5 pedestrians, 7 cars, 2 trucks, 1 tricycle, 1 motor, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000315_01601_d_0000509.jpg: 384x640 12 pedestrians, 37 cars, 1 motor, 6.0ms
+Speed: 5.0ms preprocess, 6.0ms inference, 4.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000313_07001_d_0000471.jpg: 384x640 2 pedestrians, 8 cars, 2 trucks, 6.0ms
+Speed: 3.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000296_01001_d_0000040.jpg: 384x640 97 pedestrians, 52 cars, 11 vans, 6 trucks, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000313_06601_d_0000469.jpg: 384x640 3 pedestrians, 36 cars, 1 van, 3 trucks, 8.0ms
+Speed: 2.0ms preprocess, 8.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_04201_d_0000435.jpg: 384x640 34 pedestrians, 1 people, 30 cars, 3 vans, 1 truck, 11 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_02401_d_0000426.jpg: 384x640 29 pedestrians, 2 peoples, 36 cars, 3 vans, 2 trucks, 7 motors, 9.0ms
+Speed: 2.0ms preprocess, 9.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_02201_d_0000425.jpg: 384x640 40 pedestrians, 38 cars, 1 van, 1 truck, 2 motors, 9.0ms
+Speed: 3.0ms preprocess, 9.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_01201_d_0000420.jpg: 384x640 34 pedestrians, 2 peoples, 36 cars, 4 trucks, 7 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_01001_d_0000419.jpg: 384x640 29 pedestrians, 1 people, 43 cars, 1 van, 2 trucks, 7 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_00601_d_0000417.jpg: 384x640 21 pedestrians, 39 cars, 2 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_00201_d_0000415.jpg: 384x640 45 pedestrians, 70 cars, 5 vans, 7 trucks, 7 motors, 8.2ms
+Speed: 3.0ms preprocess, 8.2ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000312_00001_d_0000414.jpg: 384x640 40 pedestrians, 72 cars, 7 vans, 5 trucks, 3 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000308_04401_d_0000327.jpg: 384x640 64 pedestrians, 40 cars, 3 vans, 2 trucks, 6 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000303_03401_d_0000200.jpg: 384x640 3 pedestrians, 34 cars, 2 trucks, 1 motor, 6.0ms
+Speed: 3.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000301_01201_d_0000162.jpg: 384x640 11 pedestrians, 47 cars, 4 vans, 6 trucks, 1 motor, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000301_01001_d_0000161.jpg: 384x640 10 pedestrians, 51 cars, 4 vans, 2 trucks, 1 motor, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000301_00201_d_0000157.jpg: 384x640 37 pedestrians, 1 people, 51 cars, 2 vans, 6 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        3/5      8.69G      1.636      1.412     0.9784        398        640: 100%|██████████| 405/405 [00:37<00:00, 10.81it/s]
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 18/18 [00:04<00:00,  4.13it/s]
+                   all        548      38759      0.286      0.237      0.203      0.113
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000301_00001_d_0000156.jpg: 384x640 45 pedestrians, 7 peoples, 50 cars, 5 vans, 1 truck, 1 tricycle, 1 bus, 7 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000313_06401_d_0000468.jpg: 384x640 7 pedestrians, 34 cars, 4 tricycles, 1 bus, 4 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_00401_d_0000870.jpg: 384x640 34 pedestrians, 3 peoples, 52 cars, 5 vans, 1 truck, 2 tricycles, 1 awning-tricycle, 1 bus, 20 motors, 6.5ms
+Speed: 1.0ms preprocess, 6.5ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_00201_d_0000869.jpg: 384x640 44 pedestrians, 35 cars, 6 vans, 2 trucks, 3 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_00001_d_0000868.jpg: 384x640 15 pedestrians, 6 peoples, 34 cars, 6 vans, 2 trucks, 3 tricycles, 12 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_00001_d_0000811.jpg: 384x640 13 pedestrians, 1 people, 14 cars, 2 vans, 1 truck, 4 tricycles, 1 awning-tricycle, 13 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_05001_d_0000782.jpg: 384x640 2 pedestrians, 40 cars, 4 vans, 6 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_04801_d_0000781.jpg: 384x640 3 pedestrians, 42 cars, 4 vans, 10 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_04601_d_0000780.jpg: 384x640 2 pedestrians, 45 cars, 2 vans, 1 truck, 19 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_03401_d_0000776.jpg: 384x640 2 pedestrians, 76 cars, 4 vans, 1 truck, 9 motors, 6.0ms
+Speed: 3.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_03001_d_0000774.jpg: 384x640 17 cars, 3 vans, 2 trucks, 6 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_02801_d_0000773.jpg: 384x640 16 pedestrians, 27 cars, 5 vans, 7 trucks, 4 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_02601_d_0000772.jpg: 384x640 11 pedestrians, 1 people, 16 cars, 1 van, 2 trucks, 7 motors, 6.0ms
+Speed: 4.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_02401_d_0000771.jpg: 384x640 2 pedestrians, 17 cars, 2 vans, 2 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_02201_d_0000770.jpg: 384x640 2 pedestrians, 10 cars, 1 van, 2 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_02001_d_0000769.jpg: 384x640 17 pedestrians, 24 cars, 2 vans, 2 trucks, 1 motor, 6.0ms
+Speed: 3.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_01801_d_0000768.jpg: 384x640 16 pedestrians, 1 people, 29 cars, 4 vans, 1 truck, 2 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_01601_d_0000767.jpg: 384x640 9 pedestrians, 1 people, 35 cars, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_01401_d_0000766.jpg: 384x640 5 pedestrians, 2 peoples, 38 cars, 2 vans, 8 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_00201_d_0000812.jpg: 384x640 6 pedestrians, 25 cars, 5 vans, 3 trucks, 3 tricycles, 11 motors, 5.9ms
+Speed: 3.1ms preprocess, 5.9ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_01201_d_0000765.jpg: 384x640 7 pedestrians, 2 peoples, 52 cars, 1 van, 1 tricycle, 14 motors, 10.0ms
+Speed: 2.0ms preprocess, 10.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_00801_d_0000763.jpg: 384x640 7 pedestrians, 3 peoples, 49 cars, 4 vans, 5 trucks, 3 tricycles, 5 motors, 17.1ms
+Speed: 0.0ms preprocess, 17.1ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_00601_d_0000762.jpg: 384x640 7 pedestrians, 1 people, 47 cars, 2 vans, 1 truck, 4 tricycles, 10 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_00401_d_0000761.jpg: 384x640 3 pedestrians, 44 cars, 1 van, 1 tricycle, 7 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_00201_d_0000760.jpg: 384x640 1 pedestrian, 1 people, 50 cars, 1 van, 10 motors, 6.4ms
+Speed: 2.0ms preprocess, 6.4ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_00001_d_0000759.jpg: 384x640 1 pedestrian, 1 people, 44 cars, 2 vans, 1 truck, 4 motors, 1.1ms
+Speed: 1.0ms preprocess, 1.1ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000283_01001_d_0000679.jpg: 384x640 4 cars, 1 van, 1 truck, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000283_00801_d_0000678.jpg: 384x640 2 cars, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 5.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000283_00601_d_0000677.jpg: 384x640 2 cars, 1 van, 1 truck, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000283_00401_d_0000676.jpg: 384x640 1 pedestrian, 5 cars, 9.0ms
+Speed: 2.0ms preprocess, 9.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000280_03401_d_0000629.jpg: 384x640 4 pedestrians, 2 peoples, 49 cars, 2 vans, 1 truck, 2 tricycles, 1 bus, 10 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000280_03201_d_0000628.jpg: 384x640 6 pedestrians, 2 peoples, 51 cars, 3 vans, 2 trucks, 1 tricycle, 1 bus, 13 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        4/5      8.38G      1.594      1.342     0.9689        612        640: 100%|██████████| 405/405 [00:36<00:00, 11.01it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 18/18 [00:04<00:00,  4.26it/s]
+                   all        548      38759        0.3      0.242      0.219      0.123
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000280_03001_d_0000627.jpg: 384x640 3 pedestrians, 2 peoples, 55 cars, 2 vans, 1 truck, 6 motors, 8.0ms
+Speed: 2.0ms preprocess, 8.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000280_02801_d_0000626.jpg: 384x640 6 pedestrians, 3 peoples, 49 cars, 4 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000280_02601_d_0000625.jpg: 384x640 2 pedestrians, 2 peoples, 74 cars, 2 vans, 5 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000287_01001_d_0000764.jpg: 384x640 5 pedestrians, 54 cars, 3 vans, 6 trucks, 2 tricycles, 1 awning-tricycle, 2 motors, 8.0ms
+Speed: 1.0ms preprocess, 8.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_00401_d_0000813.jpg: 384x640 12 pedestrians, 1 people, 30 cars, 3 vans, 3 trucks, 1 awning-tricycle, 15 motors, 6.0ms
+Speed: 1.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_00601_d_0000814.jpg: 384x640 19 pedestrians, 29 cars, 2 vans, 7 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_00801_d_0000815.jpg: 384x640 10 pedestrians, 25 cars, 1 van, 9 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000290_04001_d_0000867.jpg: 384x640 7 pedestrians, 1 people, 67 cars, 1 van, 1 truck, 1 awning-tricycle, 5 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_07201_d_0000847.jpg: 384x640 49 cars, 2 vans, 2 trucks, 2 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_07001_d_0000846.jpg: 384x640 2 pedestrians, 33 cars, 7 vans, 4 trucks, 1 bus, 4 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_06801_d_0000845.jpg: 384x640 9 pedestrians, 39 cars, 1 van, 3 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_06601_d_0000844.jpg: 384x640 10 pedestrians, 64 cars, 4 vans, 5 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_06401_d_0000843.jpg: 384x640 6 pedestrians, 57 cars, 5 vans, 2 trucks, 1 tricycle, 1 awning-tricycle, 2 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 3.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_06201_d_0000842.jpg: 384x640 13 pedestrians, 1 people, 60 cars, 2 vans, 2 trucks, 5 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_06001_d_0000841.jpg: 384x640 13 pedestrians, 1 people, 66 cars, 4 vans, 1 truck, 1 awning-tricycle, 1 bus, 3 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_05801_d_0000840.jpg: 384x640 16 pedestrians, 77 cars, 3 vans, 2 tricycles, 2 awning-tricycles, 7 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 4.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_05601_d_0000839.jpg: 384x640 29 pedestrians, 63 cars, 1 van, 2 tricycles, 1 awning-tricycle, 7 motors, 8.0ms
+Speed: 2.0ms preprocess, 8.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_05401_d_0000838.jpg: 384x640 11 pedestrians, 73 cars, 2 trucks, 21 motors, 7.0ms
+Speed: 1.1ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_05201_d_0000837.jpg: 384x640 20 pedestrians, 41 cars, 1 van, 1 tricycle, 1 awning-tricycle, 14 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 3.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_05001_d_0000836.jpg: 384x640 22 pedestrians, 31 cars, 1 van, 1 truck, 15 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_04801_d_0000835.jpg: 384x640 25 pedestrians, 30 cars, 3 vans, 2 trucks, 1 tricycle, 6 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_04601_d_0000834.jpg: 384x640 77 pedestrians, 1 people, 32 cars, 4 vans, 1 truck, 1 tricycle, 1 bus, 20 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 4.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_04401_d_0000833.jpg: 384x640 54 pedestrians, 3 peoples, 29 cars, 2 vans, 1 tricycle, 11 motors, 6.0ms
+Speed: 3.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_04201_d_0000832.jpg: 384x640 47 pedestrians, 2 peoples, 21 cars, 15 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_01001_d_0000816.jpg: 384x640 1 pedestrian, 19 cars, 1 tricycle, 12 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_01201_d_0000817.jpg: 384x640 13 pedestrians, 21 cars, 1 van, 1 tricycle, 1 awning-tricycle, 10 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_01401_d_0000818.jpg: 384x640 8 pedestrians, 15 cars, 1 van, 3 trucks, 7 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_01601_d_0000819.jpg: 384x640 7 pedestrians, 29 cars, 1 van, 3 trucks, 4 motors, 6.0ms
+Speed: 2.1ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_02001_d_0000821.jpg: 384x640 5 pedestrians, 27 cars, 2 vans, 3 trucks, 2 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_02201_d_0000822.jpg: 384x640 9 pedestrians, 11 cars, 2 trucks, 6 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000323_02601_d_0000645.jpg: 384x640 6 pedestrians, 3 peoples, 69 cars, 3 vans, 9 trucks, 3 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_02401_d_0000823.jpg: 384x640 10 pedestrians, 32 cars, 3 vans, 1 truck, 1 tricycle, 1 awning-tricycle, 11 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        5/5      10.5G      1.574      1.296     0.9636        574        640: 100%|██████████| 405/405 [00:37<00:00, 10.83it/s]
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 18/18 [00:04<00:00,  4.28it/s]
+                   all        548      38759      0.308      0.254      0.229      0.129
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_03001_d_0000826.jpg: 384x640 5 pedestrians, 35 cars, 3 vans, 1 truck, 8 motors, 16.3ms
+Speed: 0.0ms preprocess, 16.3ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_03201_d_0000827.jpg: 384x640 11 pedestrians, 39 cars, 1 van, 1 truck, 8 motors, 0.0ms
+Speed: 0.4ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_03401_d_0000828.jpg: 384x640 18 pedestrians, 1 people, 40 cars, 1 van, 1 tricycle, 5 motors, 2.6ms
+Speed: 1.3ms preprocess, 2.6ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_03601_d_0000829.jpg: 384x640 15 pedestrians, 38 cars, 5 motors, 19.6ms
+Speed: 0.0ms preprocess, 19.6ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_03801_d_0000830.jpg: 384x640 10 pedestrians, 1 people, 30 cars, 2 vans, 15 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 17.5ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_04001_d_0000831.jpg: 384x640 33 pedestrians, 1 people, 32 cars, 4 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 4.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000289_02601_d_0000824.jpg: 384x640 9 pedestrians, 53 cars, 1 van, 8 motors, 17.9ms
+Speed: 0.0ms preprocess, 17.9ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000280_02401_d_0000624.jpg: 384x640 2 pedestrians, 1 people, 78 cars, 1 van, 2 motors, 17.4ms
+Speed: 0.0ms preprocess, 17.4ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000327_00001_d_0000711.jpg: 384x640 17 pedestrians, 43 cars, 1 van, 2 trucks, 3 motors, 15.6ms
+Speed: 0.0ms preprocess, 15.6ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000327_00401_d_0000713.jpg: 384x640 6 pedestrians, 2 peoples, 41 cars, 2 tricycles, 1 awning-tricycle, 4 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000359_00785_d_0000703.jpg: 384x640 5 pedestrians, 4 peoples, 45 cars, 7 motors, 16.2ms
+Speed: 0.0ms preprocess, 16.2ms inference, 2.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000359_00589_d_0000702.jpg: 384x640 7 pedestrians, 10 peoples, 1 bicycle, 41 cars, 1 tricycle, 11 motors, 17.6ms
+Speed: 0.0ms preprocess, 17.6ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000359_00393_d_0000701.jpg: 384x640 11 pedestrians, 1 people, 15 cars, 2 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 15.6ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000358_03333_d_0000697.jpg: 384x640 6 pedestrians, 1 people, 81 cars, 1 van, 1 tricycle, 2 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_05097_d_0000655.jpg: 384x640 10 pedestrians, 4 peoples, 85 cars, 1 bus, 13 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 16.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_04901_d_0000654.jpg: 384x640 10 pedestrians, 2 peoples, 86 cars, 2 vans, 1 tricycle, 2 buss, 4 motors, 17.4ms
+Speed: 0.0ms preprocess, 17.4ms inference, 2.9ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_04705_d_0000653.jpg: 384x640 13 pedestrians, 7 peoples, 75 cars, 1 van, 2 trucks, 1 tricycle, 2 buss, 10 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 15.6ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_04313_d_0000651.jpg: 384x640 8 pedestrians, 2 peoples, 105 cars, 1 van, 1 bus, 8 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 13.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_04117_d_0000650.jpg: 384x640 16 pedestrians, 6 peoples, 51 cars, 1 truck, 6 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 16.2ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_03921_d_0000649.jpg: 384x640 15 pedestrians, 8 peoples, 69 cars, 1 bus, 12 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 1.5ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_03725_d_0000648.jpg: 384x640 11 pedestrians, 107 cars, 1 van, 1 truck, 1 bus, 7 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_03529_d_0000647.jpg: 384x640 27 pedestrians, 3 peoples, 127 cars, 14 motors, 1.2ms
+Speed: 15.6ms preprocess, 1.2ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_03333_d_0000646.jpg: 384x640 33 pedestrians, 2 peoples, 100 cars, 1 van, 2 buss, 8 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_02941_d_0000644.jpg: 384x640 18 pedestrians, 3 peoples, 74 cars, 1 truck, 1 tricycle, 2 buss, 7 motors, 3.1ms
+Speed: 17.4ms preprocess, 3.1ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000359_00981_d_0000704.jpg: 384x640 5 pedestrians, 3 peoples, 96 cars, 2 motors, 7.8ms
+Speed: 0.0ms preprocess, 7.8ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_02745_d_0000643.jpg: 384x640 29 pedestrians, 2 peoples, 65 cars, 2 vans, 1 tricycle, 2 buss, 6 motors, 17.8ms
+Speed: 0.0ms preprocess, 17.8ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_02157_d_0000640.jpg: 384x640 9 pedestrians, 5 peoples, 111 cars, 3 vans, 2 trucks, 1 tricycle, 7 motors, 21.2ms
+Speed: 0.0ms preprocess, 21.2ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_01961_d_0000639.jpg: 384x640 4 pedestrians, 4 peoples, 131 cars, 1 van, 1 truck, 2 tricycles, 1 awning-tricycle, 3 buss, 8 motors, 18.7ms
+Speed: 0.0ms preprocess, 18.7ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_01765_d_0000638.jpg: 384x640 9 pedestrians, 2 peoples, 121 cars, 2 vans, 1 truck, 2 buss, 4 motors, 17.3ms
+Speed: 0.0ms preprocess, 17.3ms inference, 1.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_01569_d_0000637.jpg: 384x640 10 pedestrians, 5 peoples, 107 cars, 2 vans, 1 tricycle, 2 buss, 14 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_01177_d_0000635.jpg: 384x640 24 pedestrians, 4 peoples, 101 cars, 1 van, 2 tricycles, 1 bus, 13 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 11.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_00589_d_0000632.jpg: 384x640 22 pedestrians, 5 peoples, 132 cars, 2 tricycles, 1 bus, 15 motors, 1.2ms
+Speed: 16.1ms preprocess, 1.2ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+5 epochs completed in 0.079 hours.
+Optimizer stripped from ultralytics\train4\weights\last.pt, 6.2MB
+Optimizer stripped from ultralytics\train4\weights\best.pt, 6.2MB
+Validating ultralytics\train4\weights\best.pt...
+Ultralytics YOLOv8.0.186  Python-3.11.5 torch-2.1.0+cu118 CUDA:0 (NVIDIA GeForce RTX 4090, 24564MiB)
+Model summary (fused): 168 layers, 3007598 parameters, 0 gradients, 8.1 GFLOPs
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 18/18 [00:13<00:00,  1.30it/s]
+                   all        548      38759      0.307      0.254      0.229      0.129
+            pedestrian        548       8844      0.313      0.293      0.247      0.102
+                people        548       5125      0.451      0.148      0.198     0.0652
+               bicycle        548       1287      0.146     0.0155     0.0311    0.00979
+                   car        548      14064      0.373      0.738      0.655      0.423
+                   van        548       1975       0.31      0.285      0.233      0.155
+                 truck        548        750      0.292      0.217      0.202      0.138
+              tricycle        548       1045      0.366      0.131      0.132     0.0716
+       awning-tricycle        548        532      0.238      0.047     0.0683     0.0442
+                   bus        548        251      0.287      0.363      0.299      0.203
+                 motor        548       4886      0.296      0.301      0.228     0.0832
+Speed: 0.4ms preprocess, 1.9ms inference, 0.0ms loss, 3.4ms postprocess per image
+Results saved to [1multralytics\train4
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000348_03333_d_0000423.jpg: 384x640 25 pedestrians, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000348_00589_d_0000409.jpg: 384x640 18 pedestrians, 3 peoples, 9 cars, 5 vans, 2 tricycles, 2 awning-tricycles, 3 buss, 6 motors, 16.0ms
+Speed: 0.0ms preprocess, 16.0ms inference, 0.5ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000346_07057_d_0000382.jpg: 384x640 19 pedestrians, 19 peoples, 85 cars, 1 van, 25 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000346_03921_d_0000366.jpg: 384x640 14 pedestrians, 3 peoples, 52 cars, 1 van, 15 motors, 6.5ms
+Speed: 1.0ms preprocess, 6.5ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000346_02549_d_0000359.jpg: 384x640 30 pedestrians, 6 peoples, 81 cars, 1 tricycle, 49 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000346_01961_d_0000356.jpg: 384x640 9 pedestrians, 3 peoples, 64 cars, 1 tricycle, 5 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000346_00001_d_0000346.jpg: 384x640 21 pedestrians, 2 peoples, 90 cars, 2 vans, 1 truck, 2 buss, 34 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000345_07057_d_0000345.jpg: 384x640 24 pedestrians, 10 peoples, 43 cars, 2 tricycles, 21 motors, 7.0ms
+Speed: 1.7ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000356_02353_d_0000641.jpg: 384x640 19 pedestrians, 10 peoples, 103 cars, 1 tricycle, 13 motors, 7.2ms
+Speed: 2.0ms preprocess, 7.2ms inference, 3.4ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000342_00393_d_0000244.jpg: 384x640 4 pedestrians, 3 peoples, 115 cars, 2 vans, 2 trucks, 1 tricycle, 1 bus, 6 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000359_01177_d_0000705.jpg: 384x640 5 pedestrians, 1 people, 127 cars, 3 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000359_01961_d_0000707.jpg: 384x640 2 pedestrians, 2 peoples, 30 cars, 1 van, 4 motors, 9.0ms
+Speed: 3.0ms preprocess, 9.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000364_01373_d_0000780.jpg: 384x640 36 pedestrians, 13 peoples, 20 cars, 1 van, 1 truck, 5 tricycles, 2 awning-tricycles, 31 motors, 8.1ms
+Speed: 3.0ms preprocess, 8.1ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000364_01177_d_0000799.jpg: 384x640 21 pedestrians, 7 peoples, 25 cars, 2 vans, 2 trucks, 6 tricycles, 22 motors, 6.0ms
+Speed: 3.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000364_00589_d_0000798.jpg: 384x640 28 pedestrians, 11 peoples, 13 cars, 1 truck, 12 tricycles, 20 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_07645_d_0000752.jpg: 384x640 12 pedestrians, 24 cars, 3 vans, 2 trucks, 1 tricycle, 6.0ms
+Speed: 1.8ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_07253_d_0000750.jpg: 384x640 6 pedestrians, 5 peoples, 24 cars, 4 vans, 1 truck, 1 awning-tricycle, 8 motors, 6.2ms
+Speed: 2.0ms preprocess, 6.2ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_07057_d_0000749.jpg: 384x640 3 pedestrians, 2 peoples, 24 cars, 3 vans, 1 truck, 2 tricycles, 1 awning-tricycle, 4 motors, 6.2ms
+Speed: 2.0ms preprocess, 6.2ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_06861_d_0000748.jpg: 384x640 5 pedestrians, 1 people, 31 cars, 1 van, 2 trucks, 2 tricycles, 2 awning-tricycles, 6 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_06665_d_0000747.jpg: 384x640 13 pedestrians, 4 peoples, 62 cars, 3 vans, 2 trucks, 4 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_06273_d_0000745.jpg: 384x640 8 pedestrians, 2 peoples, 59 cars, 1 tricycle, 1 bus, 3 motors, 6.0ms
+Speed: 3.0ms preprocess, 6.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_05685_d_0000742.jpg: 384x640 3 pedestrians, 10 peoples, 77 cars, 3 vans, 13 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_05293_d_0000740.jpg: 384x640 14 pedestrians, 1 people, 63 cars, 1 van, 1 truck, 1 tricycle, 12 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_04705_d_0000737.jpg: 384x640 1 pedestrian, 1 people, 2 cars, 1 tricycle, 6 motors, 6.5ms
+Speed: 2.0ms preprocess, 6.5ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_04117_d_0000734.jpg: 384x640 6 pedestrians, 4 peoples, 8 cars, 1 van, 6 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.3ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_03921_d_0000733.jpg: 384x640 6 pedestrians, 3 peoples, 46 cars, 1 truck, 4 motors, 17.4ms
+Speed: 0.0ms preprocess, 17.4ms inference, 5.7ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000359_01373_d_0000706.jpg: 384x640 7 pedestrians, 11 cars, 1 van, 2 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_03529_d_0000731.jpg: 384x640 1 pedestrian, 3 peoples, 17 cars, 1 truck, 1 tricycle, 14 motors, 17.8ms
+Speed: 0.0ms preprocess, 17.8ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_03137_d_0000729.jpg: 384x640 7 pedestrians, 2 peoples, 63 cars, 3 vans, 1 truck, 1 bus, 14 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 15.6ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_02941_d_0000728.jpg: 384x640 4 pedestrians, 3 peoples, 80 cars, 14 motors, 0.0ms
+Speed: 16.3ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_02745_d_0000727.jpg: 384x640 6 pedestrians, 2 peoples, 1 bicycle, 94 cars, 12 motors, 7.0ms
+Speed: 2.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000360_02353_d_0000725.jpg: 384x640 17 pedestrians, 2 peoples, 69 cars, 1 van, 9 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 2.6ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+[34m[1mwandb[39m[22m: [33mWARNING[39m Step only supports monotonically increasing values, use define_metric to set a custom x axis. For details see: https://wandb.me/define-metric
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 6. Dropping entry: {'results': {'_type': 'image-file', 'sha256': '769bb7562ca93ca1baa77d4a0d959bbb48ac5fd929b79965ba68fef01d0a108c', 'size': 277608, 'path': 'media/images/results_6_769bb7562ca93ca1baa7.png', 'format': 'png', 'width': 2400, 'height': 1200}, '_timestamp': 1696850135.6584275}).
+ultralytics.utils.metrics.DetMetrics object with attributes:
+ap_class_index: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+box: ultralytics.utils.metrics.Metric object
+confusion_matrix: <ultralytics.utils.metrics.ConfusionMatrix object at 0x000002D4ED070390>
+fitness: 0.13947607693383043
+keys: ['metrics/precision(B)', 'metrics/recall(B)', 'metrics/mAP50(B)', 'metrics/mAP50-95(B)']
+maps: array([    0.10155,    0.065223,   0.0097891,      0.4232,     0.15511,      0.1379,    0.071553,    0.044217,     0.20313,    0.083154])
+names: {0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van', 5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'}
+plot: True
+results_dict: {'metrics/precision(B)': 0.30732032433751943, 'metrics/recall(B)': 0.25388329907009843, 'metrics/mAP50(B)': 0.22941641158351805, 'metrics/mAP50-95(B)': 0.12948270641719847, 'fitness': 0.13947607693383043}
+save_dir: WindowsPath('ultralytics/train4')
+speed: {'preprocess': 0.3649353110877267, 'inference': 1.921062486885238, 'loss': 0.0, 'postprocess': 3.4068631429741854}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'runs' is not defined
+Ultralytics YOLOv8.0.186  Python-3.11.5 torch-2.1.0+cu118 CUDA:0 (NVIDIA GeForce RTX 4090, 24564MiB)
+Model summary (fused): 168 layers, 3007598 parameters, 0 gradients, 8.1 GFLOPs
+[34m[1mval: [39m[22mScanning C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\labels.cache... 548 images, 0 backgrounds, 0 corrupt: 100%|██████████| 548/548 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 35/35 [00:16<00:00,  2.15it/s]
+                   all        548      38759      0.308      0.254      0.229       0.13
+            pedestrian        548       8844      0.316      0.294      0.249      0.102
+                people        548       5125      0.451      0.147      0.197     0.0657
+               bicycle        548       1287      0.146     0.0155     0.0306    0.00985
+                   car        548      14064      0.373      0.739      0.656      0.424
+                   van        548       1975      0.309      0.285      0.234      0.156
+                 truck        548        750      0.295      0.219      0.202      0.138
+              tricycle        548       1045      0.366      0.131      0.133     0.0718
+       awning-tricycle        548        532      0.238      0.047     0.0683     0.0446
+                   bus        548        251      0.285      0.359      0.298      0.204
+                 motor        548       4886      0.296      0.301      0.228     0.0836
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000001_02999_d_0000005.jpg: 384x640 22 pedestrians, 36 cars, 1 van, 1 tricycle, 26 motors, 8.2ms
+Speed: 0.4ms preprocess, 8.2ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02400_d_0000033.jpg: 384x640 173 pedestrians, 1 people, 109 cars, 1 van, 1 truck, 6 buss, 9 motors, 0.0ms
+Speed: 3.5ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02200_d_0000032.jpg: 384x640 90 pedestrians, 2 peoples, 155 cars, 1 van, 1 truck, 11 buss, 22 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 0.8ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02000_d_0000031.jpg: 384x640 58 pedestrians, 1 people, 190 cars, 1 van, 7 buss, 16 motors, 5.1ms
+Speed: 1.2ms preprocess, 5.1ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01800_d_0000030.jpg: 384x640 50 pedestrians, 1 people, 196 cars, 1 van, 5 buss, 2 motors, 0.0ms
+Speed: 0.9ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01600_d_0000029.jpg: 384x640 66 pedestrians, 1 people, 141 cars, 5 buss, 5 motors, 18.9ms
+Speed: 0.0ms preprocess, 18.9ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01400_d_0000028.jpg: 384x640 69 pedestrians, 101 cars, 3 buss, 1 motor, 4.1ms
+Speed: 0.0ms preprocess, 4.1ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01200_d_0000027.jpg: 384x640 23 pedestrians, 3 peoples, 73 cars, 2 buss, 13 motors, 16.3ms
+Speed: 0.0ms preprocess, 16.3ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_01000_d_0000026.jpg: 384x640 22 pedestrians, 3 peoples, 75 cars, 1 truck, 6 buss, 8 motors, 5.6ms
+Speed: 17.5ms preprocess, 5.6ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00800_d_0000025.jpg: 384x640 30 pedestrians, 1 people, 75 cars, 1 van, 12 buss, 4 motors, 0.0ms
+Speed: 0.0ms preprocess, 0.0ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00600_d_0000024.jpg: 384x640 33 pedestrians, 70 cars, 19 buss, 3 motors, 7.0ms
+Speed: 1.0ms preprocess, 7.0ms inference, 2.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00200_d_0000022.jpg: 384x640 7 pedestrians, 1 people, 83 cars, 3 vans, 1 tricycle, 2 buss, 3 motors, 15.6ms
+Speed: 0.0ms preprocess, 15.6ms inference, 1.9ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_00000_d_0000021.jpg: 384x640 8 pedestrians, 73 cars, 5 buss, 1 motor, 3.9ms
+Speed: 0.3ms preprocess, 3.9ms inference, 0.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000293_03601_d_0000940.jpg: 384x640 6 pedestrians, 108 cars, 7 motors, 6.0ms
+Speed: 2.0ms preprocess, 6.0ms inference, 1.9ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000291_05201_d_0000893.jpg: 384x640 45 pedestrians, 2 peoples, 227 cars, 1 van, 1 awning-tricycle, 24 motors, 16.3ms
+Speed: 0.0ms preprocess, 16.3ms inference, 1.3ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+image 1/1 C:\Users\LMMISTA-WAP265\YOLOV8_mlops\mlops\data\Mydataset\VisDrone2019-DET-val\images\0000295_02900_d_0000034.jpg: 384x640 95 pedestrians, 83 cars, 1 van, 7 buss, 2 motors, 11.7ms
+Speed: 0.0ms preprocess, 11.7ms inference, 3.0ms postprocess per image at shape (1, 3, 384, 640)
+Results saved to [1mruns\detect\train
+ultralytics.utils.metrics.DetMetrics object with attributes:
+ap_class_index: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+box: ultralytics.utils.metrics.Metric object
+confusion_matrix: <ultralytics.utils.metrics.ConfusionMatrix object at 0x000002D4B72B9CD0>
+fitness: 0.13984586383948325
+keys: ['metrics/precision(B)', 'metrics/recall(B)', 'metrics/mAP50(B)', 'metrics/mAP50-95(B)']
+maps: array([    0.10219,    0.065708,   0.0098461,     0.42401,     0.15602,     0.13758,    0.071827,    0.044586,     0.20353,    0.083572])
+names: {0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van', 5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'}
+plot: True
+results_dict: {'metrics/precision(B)': 0.30768315574119276, 'metrics/recall(B)': 0.2536571237049797, 'metrics/mAP50(B)': 0.2294762607358484, 'metrics/mAP50-95(B)': 0.12988693085099823, 'fitness': 0.13984586383948325}
+save_dir: WindowsPath('ultralytics/val')
+speed: {'preprocess': 0.4956321994753649, 'inference': 2.5733282966335325, 'loss': 0.0018246852568466296, 'postprocess': 5.1436946339850875}
+Speed: 0.5ms preprocess, 2.6ms inference, 0.0ms loss, 5.1ms postprocess per image
+Results saved to [1multralytics\val
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    897664  ultralytics.nn.modules.head.Detect           [80, [64, 128, 256]]
+YOLOv8n summary: 225 layers, 3157200 parameters, 3157184 gradients, 8.9 GFLOPs
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 3151888 gradients, 8.7 GFLOPs
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 3151888 gradients, 8.7 GFLOPs
+[34m[1mPyTorch:[39m[22m starting from 'yolov8n.yaml' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (0.0 MB)
+[34m[1mTensorRT:[39m[22m export failure  0.0s: No module named 'tensorrt'
+Traceback (most recent call last):
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 581, in export_engine
+    import tensorrt as trt  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tensorrt'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\utils\benchmarks.py", line 212, in profile
+    engine_file = model.export(format='engine',
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\model.py", line 309, in export
+    return Exporter(overrides=args, _callbacks=self.callbacks)(model=self.model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 252, in __call__
+    f[1], _ = self.export_engine()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 122, in outer_func
+    raise e
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 117, in outer_func
+    f, model = inner_func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 585, in export_engine
+    import tensorrt as trt  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tensorrt'
+Profiling: ['yolov8n.yaml', 'yolov8s.yaml']
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 0 gradients, 8.7 GFLOPs
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 0 gradients, 8.7 GFLOPs
+Profiling: ['yolov8n.pt']
+[34m[1mPyTorch:[39m[22m starting from 'yolov8n.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (6.2 MB)
+[34m[1mTensorRT:[39m[22m export failure  0.0s: No module named 'tensorrt'
+Traceback (most recent call last):
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 581, in export_engine
+    import tensorrt as trt  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tensorrt'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\utils\benchmarks.py", line 212, in profile
+    engine_file = model.export(format='engine',
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\model.py", line 309, in export
+    return Exporter(overrides=args, _callbacks=self.callbacks)(model=self.model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 252, in __call__
+    f[1], _ = self.export_engine()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 122, in outer_func
+    raise e
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 117, in outer_func
+    f, model = inner_func(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\anaconda3\envs\mlops\Lib\site-packages\ultralytics\engine\exporter.py", line 585, in export_engine
+    import tensorrt as trt  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tensorrt'
+  File "<stdin>", line 2
+    ^
+IndentationError: expected an indented block after 'with' statement on line 1
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+NameError: name 'yolo_model' is not defined
+WARNING  torch.Tensor inputs should be normalized 0.0-1.0 but max value is 5.130184650421143. Dividing input by 255.
+0: 224x224 (no detections), 1: 224x224 (no detections), 2: 224x224 (no detections), 3: 224x224 (no detections), 4: 224x224 (no detections), 117.8ms
+Speed: 0.0ms preprocess, 23.6ms inference, 3.1ms postprocess per image at shape (1, 3, 224, 224)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 54.38it/s]
+[ultralytics.engine.results.Results object with attributes:
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van', 5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'}
+orig_img: array([[[0, 1, 1],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [1, 0, 0],
+        [0, 1, 0]],
+       [[0, 2, 0],
+        [0, 2, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 1],
+        [0, 1, 0],
+        [1, 0, 1],
+        ...,
+        [0, 1, 0],
+        [0, 0, 0],
+        [1, 0, 0]],
+       ...,
+       [[0, 2, 0],
+        [1, 0, 0],
+        [0, 0, 0],
+        ...,
+        [1, 0, 0],
+        [0, 1, 0],
+        [0, 0, 2]],
+       [[0, 0, 0],
+        [1, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 1, 1],
+        [1, 1, 0]],
+       [[1, 0, 0],
+        [1, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 1, 0],
+        [0, 0, 0],
+        [0, 0, 0]]], dtype=uint8)
+orig_shape: (224, 224)
+path: 'image0.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 0.0, 'inference': 23.569059371948242, 'postprocess': 3.1255245208740234}, ultralytics.engine.results.Results object with attributes:
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van', 5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'}
+orig_img: array([[[0, 0, 0],
+        [0, 0, 0],
+        [1, 0, 0],
+        ...,
+        [1, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[1, 0, 0],
+        [1, 1, 2],
+        [0, 0, 0],
+        ...,
+        [0, 0, 1],
+        [1, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 1, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [1, 1, 0]],
+       ...,
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 1, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 1, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [1, 0, 0]]], dtype=uint8)
+orig_shape: (224, 224)
+path: 'image1.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 0.0, 'inference': 23.569059371948242, 'postprocess': 3.1255245208740234}, ultralytics.engine.results.Results object with attributes:
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van', 5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'}
+orig_img: array([[[0, 0, 0],
+        [0, 1, 1],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 2],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 1],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 1],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       ...,
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 1, 0],
+        ...,
+        [0, 0, 0],
+        [1, 0, 1],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 1, 0],
+        [1, 1, 1],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]]], dtype=uint8)
+orig_shape: (224, 224)
+path: 'image2.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 0.0, 'inference': 23.569059371948242, 'postprocess': 3.1255245208740234}, ultralytics.engine.results.Results object with attributes:
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van', 5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'}
+orig_img: array([[[1, 1, 0],
+        [0, 0, 0],
+        [0, 1, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 1],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 1],
+        [0, 0, 0],
+        [0, 1, 0]],
+       [[0, 0, 0],
+        [0, 1, 0],
+        [0, 0, 2],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       ...,
+       [[2, 1, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 1, 0]],
+       [[0, 0, 1],
+        [0, 0, 0],
+        [1, 1, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [1, 0, 0]]], dtype=uint8)
+orig_shape: (224, 224)
+path: 'image3.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 0.0, 'inference': 23.569059371948242, 'postprocess': 3.1255245208740234}, ultralytics.engine.results.Results object with attributes:
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'pedestrian', 1: 'people', 2: 'bicycle', 3: 'car', 4: 'van', 5: 'truck', 6: 'tricycle', 7: 'awning-tricycle', 8: 'bus', 9: 'motor'}
+orig_img: array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 1, 0],
+        ...,
+        [0, 0, 0],
+        [0, 2, 0],
+        [1, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 1]],
+       [[0, 0, 1],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 2]],
+       ...,
+       [[0, 0, 0],
+        [0, 0, 0],
+        [2, 0, 1],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [1, 0, 1],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 1],
+        [0, 1, 0]],
+       [[0, 0, 0],
+        [2, 1, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]]], dtype=uint8)
+orig_shape: (224, 224)
+path: 'image4.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 0.0, 'inference': 23.569059371948242, 'postprocess': 3.1255245208740234}]
+[ultralytics.engine.results.Results object with attributes:
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+orig_img: array([[[0, 1, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 1],
+        [0, 1, 1]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 1],
+        ...,
+        [1, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 1],
+        [0, 0, 0],
+        [0, 0, 0]],
+       ...,
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 1],
+        [0, 0, 0],
+        [2, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [1, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 1, 1],
+        [0, 0, 0],
+        [0, 0, 0]]], dtype=uint8)
+orig_shape: (224, 224)
+path: 'image0.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 0.7505416870117188, 'inference': 117.2480583190918, 'postprocess': 0.0}]
+WARNING  torch.Tensor inputs should be normalized 0.0-1.0 but max value is 4.487975597381592. Dividing input by 255.
+0: 224x224 (no detections), 117.2ms
+Speed: 0.8ms preprocess, 117.2ms inference, 0.0ms postprocess per image at shape (1, 3, 224, 224)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler_util.py", line 196, in table
+    return _build_table(
+           ^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler_util.py", line 871, in _build_table
+    sorted(events, key=lambda evt: getattr(evt, sort_by), reverse=True),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler_util.py", line 871, in <lambda>
+    sorted(events, key=lambda evt: getattr(evt, sort_by), reverse=True),
+                                   ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FunctionEventAvg' object has no attribute 'gpu_time_total'
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+                                       Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+                                   aten::to         0.99%       2.490ms        36.88%      92.421ms     148.587us       2.934ms         1.05%     114.906ms     184.736us           622
+                             aten::_to_copy         2.13%       5.345ms        35.89%      89.931ms     186.967us       3.997ms         1.43%     111.972ms     232.790us           481
+                                aten::copy_        31.78%      79.637ms        31.78%      79.637ms     110.761us      99.555ms        35.61%      99.555ms     138.463us           719
+                               aten::conv2d         0.26%     646.000us        45.75%     114.648ms     895.688us     866.000us         0.31%      90.822ms     709.547us           128
+                          aten::convolution         0.26%     657.000us        45.49%     114.002ms     890.641us     674.000us         0.24%      89.956ms     702.781us           128
+                         aten::_convolution         1.16%       2.907ms        45.23%     113.345ms     885.508us       2.008ms         0.72%      89.282ms     697.516us           128
+                                 aten::add_         0.51%       1.276ms         0.51%       1.276ms      10.127us      47.218ms        16.89%      47.218ms     374.746us           126
+                    aten::cudnn_convolution        43.21%     108.279ms        43.21%     108.279ms     845.930us      39.098ms        13.98%      39.098ms     305.453us           128
+                                  aten::div         0.64%       1.597ms         0.65%       1.617ms      13.588us      21.209ms         7.59%      21.232ms     178.420us           119
+                                aten::silu_         0.28%     704.000us         0.28%     704.000us       6.175us      16.871ms         6.03%      16.871ms     147.991us           114
+-------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+Self CPU time total: 250.600ms
+Self CUDA time total: 279.595ms
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\profiler\profiler.py", line 177, in export_chrome_trace
+    return self.profiler.export_chrome_trace(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler.py", line 377, in export_chrome_trace
+    self.kineto_results.save(path)  # type: ignore[union-attr]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Trace is already saved.
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\profiler\profiler.py", line 177, in export_chrome_trace
+    return self.profiler.export_chrome_trace(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler.py", line 377, in export_chrome_trace
+    self.kineto_results.save(path)  # type: ignore[union-attr]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Trace is already saved.
+WARNING  torch.Tensor inputs should be normalized 0.0-1.0 but max value is 4.487975597381592. Dividing input by 255.
+0: 224x224 (no detections), 3.5ms
+Speed: 0.0ms preprocess, 3.5ms inference, 13.0ms postprocess per image at shape (1, 3, 224, 224)
+[ultralytics.engine.results.Results object with attributes:
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+orig_img: array([[[0, 1, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 1],
+        [0, 1, 1]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 1],
+        ...,
+        [1, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 1],
+        [0, 0, 0],
+        [0, 0, 0]],
+       ...,
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 0, 1],
+        [0, 0, 0],
+        [2, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [1, 0, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+       [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0, 1, 1],
+        [0, 0, 0],
+        [0, 0, 0]]], dtype=uint8)
+orig_shape: (224, 224)
+path: 'image0.jpg'
+probs: None
+save_dir: None
+speed: {'preprocess': 0.0, 'inference': 3.512859344482422, 'postprocess': 13.030529022216797}]
+---------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+                             Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls
+---------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+                     aten::conv2d         2.91%     348.000us        42.39%       5.078ms      79.344us     323.000us         2.26%       6.465ms     101.016us            64
+                aten::convolution         2.75%     329.000us        39.49%       4.730ms      73.906us     339.000us         2.38%       6.142ms      95.969us            64
+               aten::_convolution        10.13%       1.214ms        36.74%       4.401ms      68.766us     711.000us         4.98%       5.803ms      90.672us            64
+          aten::cudnn_convolution        18.33%       2.196ms        18.33%       2.196ms      34.312us       3.486ms        24.42%       3.486ms      54.469us            64
+                 aten::index_put_         0.10%      12.000us        11.65%       1.396ms     698.000us      10.000us         0.07%       2.380ms       1.190ms             2
+           aten::_index_put_impl_         1.20%     144.000us        11.55%       1.384ms     692.000us     234.000us         1.64%       2.370ms       1.185ms             2
+                         aten::to         0.33%      40.000us        21.17%       2.536ms     126.800us      76.000us         0.53%       1.727ms      86.350us            20
+                   aten::_to_copy         0.83%     100.000us        20.84%       2.496ms     277.333us      69.000us         0.48%       1.651ms     183.444us             9
+                      aten::copy_        20.36%       2.439ms        20.36%       2.439ms     135.500us       1.186ms         8.31%       1.186ms      65.889us            18
+                       aten::add_         4.95%     593.000us         4.95%     593.000us       9.413us       1.134ms         7.95%       1.134ms      18.000us            63
+---------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+Self CPU time total: 11.979ms
+Self CUDA time total: 14.273ms
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\profiler\profiler.py", line 177, in export_chrome_trace
+    return self.profiler.export_chrome_trace(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler.py", line 377, in export_chrome_trace
+    self.kineto_results.save(path)  # type: ignore[union-attr]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Trace is already saved.
+  File "<stdin>", line 1
+    & C:/Users/LMMISTA-WAP265/anaconda3/envs/mlops/python.exe c:/Users/LMMISTA-WAP265/YOLOV8_mlops/toy_profile.py
+    ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\profiler\profiler.py", line 177, in export_chrome_trace
+    return self.profiler.export_chrome_trace(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler.py", line 377, in export_chrome_trace
+    self.kineto_results.save(path)  # type: ignore[union-attr]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Trace is already saved.
+---------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+                             Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls
+---------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+                     aten::conv2d         2.91%     348.000us        42.39%       5.078ms      79.344us     323.000us         2.26%       6.465ms     101.016us            64
+                aten::convolution         2.75%     329.000us        39.49%       4.730ms      73.906us     339.000us         2.38%       6.142ms      95.969us            64
+               aten::_convolution        10.13%       1.214ms        36.74%       4.401ms      68.766us     711.000us         4.98%       5.803ms      90.672us            64
+          aten::cudnn_convolution        18.33%       2.196ms        18.33%       2.196ms      34.312us       3.486ms        24.42%       3.486ms      54.469us            64
+                 aten::index_put_         0.10%      12.000us        11.65%       1.396ms     698.000us      10.000us         0.07%       2.380ms       1.190ms             2
+           aten::_index_put_impl_         1.20%     144.000us        11.55%       1.384ms     692.000us     234.000us         1.64%       2.370ms       1.185ms             2
+                         aten::to         0.33%      40.000us        21.17%       2.536ms     126.800us      76.000us         0.53%       1.727ms      86.350us            20
+                   aten::_to_copy         0.83%     100.000us        20.84%       2.496ms     277.333us      69.000us         0.48%       1.651ms     183.444us             9
+                      aten::copy_        20.36%       2.439ms        20.36%       2.439ms     135.500us       1.186ms         8.31%       1.186ms      65.889us            18
+                       aten::add_         4.95%     593.000us         4.95%     593.000us       9.413us       1.134ms         7.95%       1.134ms      18.000us            63
+---------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------
+Self CPU time total: 11.979ms
+Self CUDA time total: 14.273ms
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\profiler\profiler.py", line 177, in export_chrome_trace
+    return self.profiler.export_chrome_trace(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler.py", line 377, in export_chrome_trace
+    self.kineto_results.save(path)  # type: ignore[union-attr]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Trace is already saved.
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\profiler\profiler.py", line 177, in export_chrome_trace
+    return self.profiler.export_chrome_trace(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\LMMISTA-WAP265\AppData\Roaming\Python\Python311\site-packages\torch\autograd\profiler.py", line 377, in export_chrome_trace
+    self.kineto_results.save(path)  # type: ignore[union-attr]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
