@@ -305,7 +305,8 @@ end of the project.
 >
 > Answer:
 
---- ![Gpu_time](https://github.com/irisdaniaj/MLOps_project/assets/68902693/fe4be3f1-8398-4a88-877f-491d8043662b) this image shows different graphs representing the gpu usage during the training of the model on our costum dataset. ![pr_curve](https://github.com/irisdaniaj/MLOps_project/assets/68902693/691c094f-857b-4743-8504-80ae601d7371) this image shows the precision recall curve of the model on our dataset ---
+--- ![Gpu_time](https://github.com/irisdaniaj/MLOps_project/assets/68902693/fe4be3f1-8398-4a88-877f-491d8043662b) ---
+--- this image shows different graphs representing the gpu usage during the training of the model on our costum dataset. --- --- ![pr_curve](https://github.com/irisdaniaj/MLOps_project/assets/68902693/691c094f-857b-4743-8504-80ae601d7371) this image shows the precision recall curve of the model on our dataset ---
 
 ### Question 15
 
