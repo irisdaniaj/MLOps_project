@@ -305,7 +305,7 @@ end of the project.
 >
 > Answer:
 
----  ![gpu](/home/irisdaniaj/Workspace/gpu_time.jpeg) this image shows different graphs representing the gpu usage during the training of the model on our costum dataset. ![gpu](/home/irisdaniaj/Workspace/pr_curve.jpeg) this image shows the precision recall curve of the model on our dataset ---
+---  ![gpu](/gpu_time.jpeg) this image shows different graphs representing the gpu usage during the training of the model on our costum dataset. ![gpu](/pr_curve.jpeg) this image shows the precision recall curve of the model on our dataset ---
 
 ### Question 15
 
