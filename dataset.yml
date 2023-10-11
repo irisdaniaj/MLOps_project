@@ -1,7 +1,0 @@
-train: C:/Users/ra78lof/yolov5/Mydataset/VisDrone2019-DET-train/images  # train images (relative to 'path')  6471 images
-val: C:/Users/ra78lof/yolov5/Mydataset/VisDrone2019-DET-val/images  # val images (relative to 'path')  548 images
-test: C:/Users/ra78lof/yolov5/Mydataset/VisDrone2019-DET-test-dev/images   # test images (optional)  1610 images
-
-# Classes
-nc: 10  # number of classes
-names: [ 'pedestrian', 'people', 'bicycle', 'car', 'van', 'truck', 'tricycle', 'awning-tricycle', 'bus', 'motor' ]
