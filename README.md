@@ -37,7 +37,6 @@ and then use the `uvicorn` package
 uvicorn --reload --port 8000 apitest:app
 ```
 and lastly open copy this link to your Chrome `http://localhost:8000/docs`
-
 Project Organization
 ------------
 
