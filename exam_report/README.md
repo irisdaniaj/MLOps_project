@@ -193,7 +193,7 @@ As general rules we tried to comment as much as possible and used very descripti
 >
 > Answer:
 
-In total we have implemented five test. The tests focuses on the data and the model. In the test script regarding the data we test if the total number of images matches an expected amount, label format(if the labels are correctly matches with the respective images) and if the images are RGB or not. In the model test script we tested for the computional time and resources used by our model and the status of the enviroment(online or offline). 
+In total we have implemented five test. The tests focuses on the data and the model. In the test script regarding the data we test if the total number of images matches an expected amount, label format(if the labels are correctly matches with the respective images) and if the images are RGB or not. In the model test script we tested for the computional time and resources used by our model and whether the model can perform real-time object detection on streaming video content. 
 
 ### Question 8
 
