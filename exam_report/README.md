@@ -463,6 +463,8 @@ end of the project.
 
 --- ![workflow](https://github.com/irisdaniaj/MLOps_project/assets/68902693/6ce904e2-0bf9-4220-89f3-9d3f6194d403) ---
 
+--- The starting point of our diagram is the Conda in which we set the enviroment and retrieve all the requirements. Moving on to our Pytorch application, we get the model from ultralytics, we use Hydra and Weight and Bias respectely for manage hyperparamets and experiment tracking. Everything in a Docker following the Cookiecutter structure. To perform Continuos integration the project has been pushed to a Github repo. We also constructed an API for user inference. ---
+
 ### Question 26
 
 > **Discuss the overall struggles of the project. Where did you spend most time and what did you do to overcome these**
