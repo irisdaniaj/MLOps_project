@@ -38,7 +38,13 @@ uvicorn --reload --port 8000 apitest:app
 ```
 and lastly open copy this link to your Chrome `http://localhost:8000/docs`
 
+# Docker
 
+If you want to use docker to run this project just position yourself into the repository and then run this command 
+
+```
+docker pull yecanlee/my-python-environment
+```
 
 Project Organization
 ------------
