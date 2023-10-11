@@ -27,6 +27,26 @@ then load the pretrained model
 ```
 python src/models/train_model.py
 ```
+# Inference 
+If you want to do inference with our model you can run the apitest.py 
+```
+python apitest.py
+```
+and then use the `uvicorn` package 
+```
+uvicorn --reload --port 8000 apitest:app
+```
+and lastly open copy this link to your Chrome `http://localhost:8000/docs`
+
+# Docker
+
+If you want to use docker to run this project just position yourself into the repository and then run this command 
+
+```
+docker pull yecanlee/my-python-environment
+```
+
+
 Project Organization
 ------------
 
