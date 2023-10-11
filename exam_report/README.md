@@ -95,8 +95,8 @@ end of the project.
 ### Additional
 
 * [x] Revisit your initial project description. Did the project turn out as you wanted?
-* [ ] Make sure all group members have a understanding about all parts of the project
-* [ ] Uploaded all your code to github
+* [x] Make sure all group members have a understanding about all parts of the project
+* [x] Uploaded all your code to github
 
 ## Group information
 
@@ -458,9 +458,9 @@ end of the project.
 > *The starting point of the diagram is our local setup, where we integrated ... and ... and ... into our code.*
 > *Whenever we commit code and puch to github, it auto triggers ... and ... . From there the diagram shows ...*
 >
-> Answer:
+> Answer: 
 
---- question 25 fill here ---
+--- ![workflow](https://github.com/irisdaniaj/MLOps_project/assets/68902693/6ce904e2-0bf9-4220-89f3-9d3f6194d403) ---
 
 ### Question 26
 
