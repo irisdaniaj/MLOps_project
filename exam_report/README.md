@@ -116,7 +116,7 @@ end of the project.
 >
 > Answer:
 
---- 12697607, 12673320, 12672582 ---
+ 12697607, 12673320, 12672582 
 
 ### Question 3
 > **What framework did you choose to work with and did it help you complete the project?**
@@ -129,7 +129,7 @@ end of the project.
 >
 > Answer:
 
---- We used Pytorch as overall framework in our project, since it's one of the most use in the machine learning field and the one we were the most familiar with. To load our pretrained model we used the ultralytics.nn.Module from ultralytics ---
+ We used Pytorch as overall framework in our project, since it's one of the most use in the machine learning field and the one we were the most familiar with. To load our pretrained model we used the ultralytics.nn.Module from ultralytics 
 
 ## Coding environment
 
@@ -148,7 +148,7 @@ end of the project.
 >
 > Answer:
 
---- I would suggest a new team member to create a dedicated conda environment using the requirements.txt file avaible in the public repository. ---
+ I would suggest a new team member to create a dedicated conda environment using the requirements.txt file avaible in the repository
 
 ### Question 5
 
@@ -163,7 +163,7 @@ end of the project.
 > *experiments.*
 > Answer:
 
---- From the cookie-cutter template we have filled the src train_model.py file with the code to load our model and we have also filled the data foler with the script to dowload the data. Lastly we have filled the reports folder with the images reporting basic statistics from our model.  ---
+From the cookie-cutter template we have filled the src train_model.py file with the code to load our model and we have also filled the data foler with the script to dowload the data. Lastly we have filled the reports folder with the images reporting basic statistics from our model.  
 
 ### Question 6
 
@@ -174,7 +174,7 @@ end of the project.
 >
 > Answer:
 
---- As general rules we tried to comment as much as possible and used very descriptive names when creating functions. Our group wasn't very large, but these concepts matter because they ensure the code and the overall project are more readable and understendable.  ---
+As general rules we tried to comment as much as possible and used very descriptive names when creating functions. Our group wasn't very large, but these concepts matter because they ensure the code and the overall project are more readable and understendable for everyone. 
 
 ## Version control
 
@@ -193,7 +193,7 @@ end of the project.
 >
 > Answer:
 
---- In total we have implemented x test. The tests focuses on the data and the model. In the test script regarding the data we test if the total number of images matches an expected amount, label format(if the labels are correctly matches with the respective images) and if the images are RGB or grey. In the model test script we tested for the computional time and resources used by our model and the status of the enviroment(online or offline)---
+In total we have implemented five test. The tests focuses on the data and the model. In the test script regarding the data we test if the total number of images matches an expected amount, label format(if the labels are correctly matches with the respective images) and if the images are RGB or not. In the model test script we tested for the computional time and resources used by our model and the status of the enviroment(online or offline). 
 
 ### Question 8
 
@@ -208,7 +208,7 @@ end of the project.
 >
 > Answer:
 
---- Some of our scripts had a covarage of 100%(test_model.py), while another one (test_data.py) had a coverage 60%. Even for the test_model.py script which had a coverage of 100% we don't trust it to be error free because a 100% coverage just means that all the lines of code are actually run when your tests are executed, not that the script is bug free.  ---
+Some of our scripts had a covarage of 100%(test_model.py), while another one (test_data.py) had a coverage 60%. Even for the test_model.py script which had a coverage of 100% we don't trust it to be error free because a 100% coverage just means that all the lines of code are actually run when the tests are executed, not that the script is bug free.  
 
 ### Question 9
 
@@ -223,7 +223,7 @@ end of the project.
 >
 > Answer:
 
---- We made use of both branches and PRs in our project. In our group, we had branches to upload new import files. In general it is good practice to crate a new branch and not push on the main repo. Also pull request are important for the cooperation of the group because not everyone could be okay with the new changes.  ---
+We made use of both branches and PRs in our project. In our group, we had branches to upload new important files. In general it is good practice to crate a new branch and not push on the main repository. Also pull request are important for the cooperation of the group because not everyone could be okay with the new changes and it allows to isolate your changes from the main codebase. This is crucial when working on bug fixes or experiments since it prevents an unstable code from affecting the stability of the main project. 
 
 ### Question 10
 
@@ -238,7 +238,7 @@ end of the project.
 >
 > Answer:
 
---- We tried to used DVC for data version control but we encouter an error that we were not able to overcome when trying to execute the dvc pull command. ---
+We tried to use DVC for data version control but we encouter an error that we were not able to overcome when trying to execute the dvc pull command. In general it is beneficial to have a data version control setup because especially in data science and machine learning project often involve collaboration among team members and different team members might be working on different aspects of data preprocessing, feature engineering, and model development. Data version control ensures that everyone works with the same dataset version. 
 
 ### Question 11
 
@@ -254,7 +254,7 @@ end of the project.
 >
 > Answer:
 
---- We have organized our CI into 2 separate files: one ensures that our tests runs in a clean and consistent environment across the three main different opearting system, while the other one automates the process of building a Docker image and pushing it to Docker Hub whenever there's a push to the master branch or any pull request, ensuring that the Docker image is always up-to-date with the latest code changes. <weblink> ---
+We have organized our CI into 2 separate files: one ensures that our tests runs in a clean and consistent environment across the three main different opearting systems(Linux, Windows, MacOs) while the other one automates the process of building a docker image and pushing it to Docker Hub whenever there's a push to the master branch or any pull request, ensuring that the docker image is always up-to-date with the latest code changes. 
 
 ## Running code and tracking experiments
 
@@ -273,7 +273,10 @@ end of the project.
 >
 > Answer:
 
---- We used a config file where we define the path to the dataset and the classes for object detection given the context of YOLO, since we did not train the model we did not had to set the hyperparamters.  ---
+We used a config file where we define the path to the dataset and the classes for object detection given the context of YOLO, since we did not train the model we did not had to set the hyperparamters. I would run our project by ensuring that dataset.yaml file is in the same folder as my make_dataset.py and than run the python script. 
+```
+python src/data/make_dataset.py
+```
 
 ### Question 13
 
@@ -288,7 +291,7 @@ end of the project.
 >
 > Answer:
 
---- We made use of config files. To reproduce an experiment create a conda enviroment with the requirements.txt file, dowload the dataset and run the src/model/train_model.py file ---
+--- We made use of config files. Whenever our project is tun the followig happens: the dataset is downloaded from the VisDrone2019 website, the train, test and val folder are created. To reproduce an experiment create a conda enviroment with the requirements.txt file, dowload the dataset and run the src/model/train_model.py file ---
 
 ### Question 14
 
@@ -305,8 +308,10 @@ end of the project.
 >
 > Answer:
 
---- ![Gpu_time](https://github.com/irisdaniaj/MLOps_project/assets/68902693/fe4be3f1-8398-4a88-877f-491d8043662b) ---
---- this image shows different graphs representing the gpu usage during the training of the model on our costum dataset. --- --- ![pr_curve](https://github.com/irisdaniaj/MLOps_project/assets/68902693/691c094f-857b-4743-8504-80ae601d7371) this image shows the precision recall curve of the model on our dataset ---
+this image shows different graphs representing the gpu usage during the training of the model on our costum dataset. As we can seen the most usage of the GPU is at the beginning of the training when the model and the data are allocated to the workers threads. 
+![Gpu_time](https://github.com/irisdaniaj/MLOps_project/assets/68902693/fe4be3f1-8398-4a88-877f-491d8043662b) 
+this image shows the precision recall curve of the model on our dataset. 
+![pr_curve](https://github.com/irisdaniaj/MLOps_project/assets/68902693/691c094f-857b-4743-8504-80ae601d7371) 
 
 ### Question 15
 
@@ -321,7 +326,7 @@ end of the project.
 >
 > Answer:
 
---- To run our Docker images, we followed these general steps; First, we created a Dockerfile that specified the base image, the files to include in the Docker image, and the default command to run. We used the docker build command to create a Docker image from the Dockerfile. Once the image was built, we ran it using the docker run command. <https://github.com/irisdaniaj/MLOps_project/blob/main/Dockerfile> ---
+To run our Docker images, we followed these general steps; we created a dockerfile that specified the base image, the files to include in the Docker image, and the default command to run. We used the docker build command to create a Docker image from the Dockerfile, once the image was built, we ran it using the docker run command. <https://github.com/irisdaniaj/MLOps_project/blob/main/Dockerfile> ---
 
 ### Question 16
 
@@ -336,7 +341,7 @@ end of the project.
 >
 > Answer:
 
---- Since we all used VSCode as editor when running in a bug we used the bebugging function in VSCode. We did a profiling run on our YOLOv8 model, collecting various metrics related to execution time, memory usage, and tensor shapes. The profilinf results showed that the "aten::uniform_" function which is a uniform random number generation function, accounts for a significant portion of the CPU time in your profiling results. The function that used the less amount of time was the "aten::view" function which is associated with changing the shape of tensors.   ---
+Since we all used VSCode as editor when running in a bug we used the bebugging function in VSCode. We did a profiling run on our YOLOv8 model, collecting various metrics related to execution time, memory usage and tensor shapes. The profiling results showed that the "aten::uniform_" function which is a uniform random number generation function, accounts for a significant portion of the CPU time in your profiling results. The function that used the less amount of time was the "aten::view" function which is associated with changing the shape of tensors.  
 
 ## Working in the cloud
 
@@ -353,7 +358,7 @@ end of the project.
 >
 > Answer:
 
---- We tried to use GCP services such as Google Cloud Storage but we eventually gave up on the task due to technical issues regarding the upload of files. Google Cloud Storage is a service for storing and accessing data on Google's infrastructure. The data is stored in objects grouped within buckets. Buckets are the basic containers that hold your data in Google Cloud Storage. They are used to store objects which consist of data and its metadata. Buckets are global resources in GCS, meaning they are not associated with any specific region and can be accessed from anywhere. ---
+We tried to use GCP services such as Google Cloud Storage but we eventually gave up on the task due to technical issues regarding the upload of files. 
 
 ### Question 18
 
@@ -368,7 +373,7 @@ end of the project.
 >
 > Answer:
 
---- question 18 fill here ---
+
 
 ### Question 19
 
@@ -377,7 +382,7 @@ end of the project.
 >
 > Answer:
 
---- question 19 fill here ---
+
 
 ### Question 20
 
@@ -386,7 +391,7 @@ end of the project.
 >
 > Answer:
 
---- question 20 fill here ---
+
 
 ### Question 21
 
@@ -395,7 +400,7 @@ end of the project.
 >
 > Answer:
 
---- question 21 fill here ---
+
 
 ### Question 22
 
@@ -411,7 +416,17 @@ end of the project.
 >
 > Answer:
 
---- question 22 fill here ---
+Locally we build an API which can be used to do inference by uploading an image. If someone wants to do this it is necessary to follow these steps: \
+on the directory of the repository run the application.py file
+
+```
+python application.py 
+```
+then run
+```
+uvicorn --reload --port 8000 application:app
+```
+and finally copy this link to Chrome `http://localhost:8000/docs`
 
 ### Question 23
 
@@ -426,7 +441,7 @@ end of the project.
 >
 > Answer:
 
---- question 23 fill here ---
+We did not implemented monitoring in our project but in general monitoring is very important for any machine learning project since it helps us guarantee that a good perfomance of our model is maintain through time. 
 
 ### Question 24
 
@@ -440,7 +455,7 @@ end of the project.
 >
 > Answer:
 
---- question 24 fill here ---
+
 
 ## Overall discussion of project
 
@@ -461,9 +476,8 @@ end of the project.
 >
 > Answer: 
 
---- ![workflow](https://github.com/irisdaniaj/MLOps_project/assets/68902693/6ce904e2-0bf9-4220-89f3-9d3f6194d403) ---
-
---- The starting point of our diagram is the Conda in which we set the enviroment and retrieve all the requirements. Moving on to our Pytorch application, we get the model from ultralytics, we use Hydra and Weight and Bias respectely for manage hyperparamets and experiment tracking. Everything in a Docker following the Cookiecutter structure. To perform Continuos integration the project has been pushed to a Github repo. We also constructed an API for user inference. ---
+ ![workflow](https://github.com/irisdaniaj/MLOps_project/assets/68902693/6ce904e2-0bf9-4220-89f3-9d3f6194d403) 
+The starting point of our diagram is Conda which we use to set the enviroment and retrieve all the requirements. Moving on to our Pytorch application, we get the model from ultralytics, we use Hydra and Weight and Bias respectely for manage hyperparamets and experiment tracking. Everything in a Docker following the Cookiecutter structure. To perform Continuos integration the project has been pushed to a Github repo. We also constructed an API for user inference. 
 
 ### Question 26
 
@@ -477,7 +491,7 @@ end of the project.
 >
 > Answer:
 
---- The biggest challanges in the project were using dvc for data version control, using fastapi and building images with docker. As stated before due to technical issues we were not able to implent data version control in our project. We had to do some research to let anyone be able to build docker images with our dockerfile. In addition, getting our fastapi.py script was a big challenge and we really had to deep dive into the web framework's code to solve our bug.  ---
+The biggest challanges in the project were using dvc for data version control, using fastapi and building images with docker. As stated before due to technical issues we were not able to implent data version control in our project. We had to do some research to let anyone be able to build docker images with our dockerfile. In addition, getting our fastapi.py script was a big challenge and we really had to deep dive into the web framework's code to solve our bugs. 
 
 ### Question 27
 
@@ -494,4 +508,4 @@ end of the project.
 >
 > Answer:
 
---- We didn't have defined personal tasks, we meet in personal to work together on the project and all members contributed to solve the bug. ---
+We didn't have defined personal tasks, we meet in personal to work together on the project and all members contributed to solve the bug. 
