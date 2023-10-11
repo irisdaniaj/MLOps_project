@@ -420,7 +420,7 @@ Locally we build an API which can be used to do inference by uploading an image.
 on the directory of the repository run the application.py file
 
 ```
-python application.py 
+python apitest.py 
 ```
 then run
 ```
